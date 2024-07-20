@@ -2701,6 +2701,9 @@ input[type='radio']:focus + label:before {
 .image.right {
   max-width: 40%;
 }
+.image.right.small {
+  max-width: 20%;
+}
 
 .image.left img,
 .image.right img {
@@ -2773,6 +2776,15 @@ a.image:hover img {
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
+}
+
+/* New class to scale the image to half size */
+.image.half {
+  width: 50%;
+}
+
+.image.half img {
+  width: 100%;
 }
 
 /* Actions */
@@ -3011,6 +3023,8 @@ article.special {
 
 header {
   cursor: default;
+  overflow: auto; /* Clear the float */
+  position: relative;
 }
 
 header > .date {
